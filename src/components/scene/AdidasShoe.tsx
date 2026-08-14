@@ -6,7 +6,7 @@ import { useGLTF } from '@react-three/drei';
 import type { GLTF } from 'three-stdlib';
 
 /** Web-optimized asset this component expects to find at runtime. */
-const MODEL_PATH = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/models/adidas-shoe.glb`;
+const MODEL_PATH = '/nexus-cine/models/adidas-shoe.glb';
 
 /**
  * Friendly names for the shoe's named sub-groups, mapped to the object
