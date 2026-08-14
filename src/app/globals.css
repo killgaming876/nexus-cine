@@ -1863,6 +1863,13 @@ a {
       rotateZ(360deg);
   }
 }
+  to {
+    transform:
+      rotateX(360deg)
+      rotateY(720deg)
+      rotateZ(360deg);
+  }
+}
 
 @keyframes nexusSpinReverse {
   from {
