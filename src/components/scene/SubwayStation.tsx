@@ -15,7 +15,7 @@ import type { GLTF } from 'three-stdlib';
  * hop required) before anything can load from this path. See the chat
  * response for the full list of issues found in the source file.
  */
-const MODEL_PATH = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/models/subway-station.glb`;
+const MODEL_PATH = '/nexus-cine/models/subway-station.glb';
 
 type SubwayStationGLTF = GLTF & {
   nodes: Record<string, THREE.Object3D>;
