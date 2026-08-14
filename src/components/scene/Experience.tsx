@@ -235,26 +235,24 @@ function FloatingParticles() {
   });
 
   return (
-    <points ref={pointsRef}>
-      <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          count={positions.length / 3}
-          array={positions}
-          itemSize={3}
-        />
-      </bufferGeometry>
+<points ref={pointsRef}>
+  <bufferGeometry>
+    <bufferAttribute
+      attach="attributes-position"
+      args={[positions, 3]}
+    />
+  </bufferGeometry>
 
-      <pointsMaterial
-        size={0.045}
-        sizeAttenuation
-        color="#9cefff"
-        transparent
-        opacity={0.28}
-        depthWrite={false}
-        blending={THREE.AdditiveBlending}
-      />
-    </points>
+  <pointsMaterial
+    size={0.045}
+    sizeAttenuation
+    color="#9cefff"
+    transparent
+    opacity={0.28}
+    depthWrite={false}
+    blending={THREE.AdditiveBlending}
+  />
+</points>
   );
 }
 
