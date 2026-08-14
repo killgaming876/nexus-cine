@@ -1848,42 +1848,27 @@ a {
   }
 }
 
+/* ============================================================
+   3D ROTATION ANIMATIONS
+   ============================================================ */
+
 @keyframes nexusSpin {
   from {
-    transform:
-      rotateX(0deg)
-      rotateY(0deg)
-      rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
 
   to {
-    transform:
-      rotateX(360deg)
-      rotateY(720deg)
-      rotateZ(360deg);
-  }
-}
-  to {
-    transform:
-      rotateX(360deg)
-      rotateY(720deg)
-      rotateZ(360deg);
+    transform: rotateX(360deg) rotateY(720deg) rotateZ(360deg);
   }
 }
 
 @keyframes nexusSpinReverse {
   from {
-    transform:
-      rotateX(360deg)
-      rotateY(360deg);
-      rotateZ(360deg);
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
 
   to {
-    transform:
-      rotateX(0deg)
-      rotateY(0deg)
-      rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
 }
 
